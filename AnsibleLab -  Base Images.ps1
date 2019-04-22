@@ -3,18 +3,7 @@ Description of elemnts in the multidimentional array
 ("VM Name", "'Memoy'mb", "Viryual Switch Name", "VCPU", "Nested Virtualiz, $true or $false", "ISO Path", "VHD Path\VHD Mame", "VHD Size")
 #>
 Clear-Host
-$VMs =  @(
-            "Ubuntu1804 - Base Image", 
-            4096MB,
-            "192.168.0.0/24",
-            2,
-            $true,
-            "C:\Base Images\ISO\Linux\ubuntu-18.04.2-live-server-amd64.iso",
-            "D:\VMs\VHDs\AnsibleLab\Ubuntu1804 - Base Image.vhdx",
-            30GB
-        ), 
-        @(
-            "WinSrv2019D - Base Image", 
+$VMs =  @(  "WinSrv2019D - Base Image", 
             4096MB,
             "192.168.0.0/24",
             2,
